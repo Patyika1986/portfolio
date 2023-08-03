@@ -5,8 +5,17 @@
 }
 
 :root {
-    --bg-light-gray: rgb(245,245,245);
+    --bg-light-gray: rgb(245, 245, 245);
+    --shadow-light-gray: rgb(212, 212, 212);
     --skyblue: rgb(90, 173, 206);
+    --light-black: rgb(29,29,29);
+
+
+
+    --x:.5rem;
+    --m:1rem;
+    --l:1.5rem;
+    --xl:2rem;
 }
 
 html,body {
@@ -19,7 +28,7 @@ html,body {
 }
 
 .active {
-    padding: .4rem;
+    padding: .7rem;
     border-radius: .3rem;
     background-color: var(--skyblue);
     color: black;
