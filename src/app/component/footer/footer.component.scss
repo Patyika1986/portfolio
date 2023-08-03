@@ -2,9 +2,9 @@
   padding: 2.2rem;
   background: var(--light-black);
   color: var(--bg-light-gray);
-  height: 800px;
+  _height: 800px;
   @media(min-width:768px){
-    min-height: 800px;
+    _min-height: 800px;
   }
 
   h2 {

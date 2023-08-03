@@ -1,8 +1,14 @@
 <app-nav></app-nav>
 <div class="container">
   <div class="box">
+    <figure>
+      <img
+        src="assets/img/bg.jpg"
+        alt="Ein schreibtisch mit Kaffee und Laptop"
+      />
+    </figure>
     <h1>Frontend Developer</h1>
-    <p>
+    <p class="context">
       <span class="text"><strong>Angular</strong></span>
       <strong class="strong"> Frontend Specialist</strong>, <br />
       <br />
@@ -14,7 +20,10 @@
       Berufsprojekte, Material-Wirtschaftssysteme, Lager-Wirtschaft-System und
       vieles mehr.
     </p>
-    <button id="more-btn">Mehr erfahren</button>
+    <button id="more-btn"><a href="#ueber-mich">Mehr erfahren</a></button>
   </div>
+  <app-about-me></app-about-me>
+  <app-projects></app-projects>
+  <app-contact></app-contact>
   <app-footer></app-footer>
 </div>
