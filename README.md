@@ -34,7 +34,7 @@ Required to install
 4. ng g c footer
 5. ng g c projects
 6. ng g c contact
-7. ng g s mailjs
+7. ng g c card
 
 8. ng generate environments
 9. npm i @emailjs/browser

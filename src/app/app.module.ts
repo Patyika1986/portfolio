@@ -11,6 +11,7 @@ import { ProjectsComponent } from './component/projects/projects.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './component/card/card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     AboutMeComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
