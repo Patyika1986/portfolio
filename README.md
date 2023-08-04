@@ -26,5 +26,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+Required to install
+
 1. ng g c home
 2. ng g c nav
+3. ng g c about-me
+4. ng g c footer
+5. ng g c projects
+6. ng g c contact
+7. ng g s mailjs
+
+8. ng generate environments
+9. npm i @emailjs/browser

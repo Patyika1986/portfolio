@@ -75,4 +75,27 @@
       }
     }
   }
+
+  .top {
+    width: 50px;
+    height: 50px;
+    padding: .5rem;
+    border-radius: .3rem;
+    position: fixed;
+    top: 50%;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--skyblue);
+    opacity: .7;
+    a {
+      color: var(--light-black);
+    }
+
+    .material-symbols-outlined {
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+  }
 }

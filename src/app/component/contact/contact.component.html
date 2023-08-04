@@ -1,20 +1,69 @@
 <div class="container">
   <div class="box" id="contact">
-    <form>
+    <form [formGroup]="form" (ngSubmit)="sendMail(form)">
       <h3>Kontakt</h3>
       <label>Vorname</label>
-      <input type="text" name="firstname" placeholder="Vorname" />
+      <input
+        type="text"
+        name="firstname"
+        placeholder="Vorname"
+        formControlName="firstname"
+      />
+      <label class="alert" *ngIf="form.get('firstname')?.hasError('minlength')"
+        >Der Vorname muss mindestens 3 Zeichen lang sein.</label
+      >
+      <label class="danger" *ngIf="form.get('firstname')?.hasError('maxlength')"
+        >Der Vorname darf nicht länger als 35 Zeichen lang sein!</label
+      >
 
       <label>Nachname</label>
-      <input type="text" name="lastname" placeholder="Nachname" />
+      <input
+        type="text"
+        name="lastname"
+        placeholder="Nachname"
+        formControlName="lastname"
+      />
+
+      <label class="alert" *ngIf="form.get('lastname')?.hasError('minlength')"
+        >Der Nachname muss mindestens 3 Zeichen lang sein.</label
+      >
+      <label class="danger" *ngIf="form.get('lastname')?.hasError('maxlength')"
+        >Der Nachname darf nicht länger als 35 Zeichen lang sein!</label
+      >
 
       <label>E-Mail</label>
-      <input type="email" name="email" placeholder="E-Mail" />
+      <input
+        type="email"
+        name="email"
+        placeholder="E-Mail"
+        formControlName="email"
+      />
+
+      <label class="alert" *ngIf="form.get('email')?.hasError('minlength')"
+        >Das E-Mail darf nicht kurzer als 9 Zeichen lang sein!</label
+      >
+      <label class="danger" *ngIf="form.get('email')?.hasError('maxlength')"
+        >Das E-Mail darf nicht länger als 35 Zeichen lang sein!</label
+      >
+      <label class="danger" *ngIf="form.get('email')?.hasError('email')"
+        >Bitte geben Sie einen Validen, E-Mail-Adresse an!</label
+      >
 
       <label>Nachricht</label>
-      <textarea id="message" placeholder="Nachricht: "></textarea>
+      <textarea
+        id="message"
+        placeholder="Nachricht: "
+        name="message"
+        formControlName="message"
+      ></textarea>
+      <label class="alert" *ngIf="form.get('message')?.hasError('minlength')"
+        >Die Nachricht muss mindestens 10 Zeichen lang sein!</label
+      >
 
-      <button id="form-btn">Senden</button>
+      <button id="form-btn" type="submit">Senden</button>
+      <label class="success" *ngIf="formValid"
+        >Nachricht wurde erfolgreich zugestellt!</label
+      >
 
       <div class="row">
         <div class="col">

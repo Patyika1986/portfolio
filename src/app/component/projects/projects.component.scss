@@ -1,8 +1,64 @@
 .container {
-    min-height: 100%;
+  min-height: 100%;
 
-    .box {
-        min-height: 100vh;
-        border-bottom: 2px solid var(--bg-light-gray);
+  .box {
+    min-height: 100vh;
+    border-bottom: 2px solid var(--bg-light-gray);
+
+    .top {
+      width: 95%;
+      margin: 3rem auto;
+      background: var(--bg-light-gray);
+      border-radius: 0.3rem;
+      padding: 2rem;
+      font-size: 2.5rem;
+      text-align: center;
     }
+
+    .section {
+      width: 95%;
+      margin: auto;
+
+      .card {
+        width: 100%;
+        margin: auto;
+        border: 2px solid var(--skyblue);
+        padding: 1rem;
+        border-radius: 0.3rem;
+
+        @media(min-width:480px) {
+          width: clamp(350px, 450px, 350px);
+        }
+
+
+        .card-body {
+          figure {
+            width: 100%;
+            height: auto;
+
+            img {
+              width: 100%;
+              height: auto;
+              border-radius: 0.3rem;
+            }
+          }
+        }
+
+        .card-footer {
+          .first-text {
+            margin-top: 0.5rem;
+          }
+
+          .last-text {
+            background: var(--bg-light-gray);
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            margin-top: 0.5rem;
+            color: var(--skyblue);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
 }
