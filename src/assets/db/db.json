@@ -1,0 +1,16 @@
+{
+    "sozialMedias": [
+        {
+            "title": "GitHub",
+            "url": "assets/icons/github.ico"
+          },
+          {
+            "title": "LinkedIn",
+            "url": "assets/icons/linkedin.png"
+          },
+          {
+            "title": "CV",
+            "url": "assets/icons/cv.png"
+          }
+    ]
+}
