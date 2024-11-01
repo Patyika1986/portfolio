@@ -1,0 +1,133 @@
+<div class="wrapper">
+    <div class="content">
+      <div class="cont-header">
+        <div class="box">
+          <div class="work-time">{{ years()  }} Y / {{months()}} M</div>
+          <span class="muted-text">Developer since</span>
+        </div>
+        <div class="img-box">
+          <img
+            class="image"
+            src="assets/images/profil.jpeg"
+            alt="My Portfolio Photo."
+          />
+        </div>
+        <div class="box">
+          <div class="work-date-since">
+            {{projects()}}
+         </div>
+         <span class="muted-text">Projects</span>
+        </div>
+      </div>
+      <div class="links">
+        <h2>Peter Lakatos</h2>
+        <p>{{ title }}</p>
+        <div class="links-items">
+          <div class="item">
+            <img
+              id="img"
+              *ngFor="let img of sozielMedia; let i = index"
+              [src]="img.url"
+              [alt]="img.title"
+              (click)="openLink(i)"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="cont-body-header">
+        <div class="about list-item" (click)="showAbout()">About</div>
+        <div class="skills list-item" (click)="showSkills()">Skills</div>
+      </div>
+      <div class="cont-body">
+        <ng-container *ngIf="isAboutActive; else elseTemplate">
+          <p>
+            Hello, I’m [Peter] – a Frontend Developer with a Passion for Angular
+            and Beyond! With a solid foundation in AngularJS and extensive
+            hands-on experience, I create dynamic, responsive, and visually
+            appealing interfaces that transform ideas into interactive web
+            applications. My enthusiasm for building seamless user experiences has
+            fueled my journey in frontend development, making me proficient in
+            Angular’s ecosystem while remaining highly adaptable to new languages
+            and frameworks. I'm continuously driven to expand my skill set and
+            stay current with the latest in frontend technology. Whether it’s
+            exploring the depths of JavaScript, diving into emerging frameworks,
+            or collaborating with cross-functional teams to bring a vision to
+            life, I'm ready to take on new challenges and make a meaningful
+            impact. If you’re looking for a developer who combines technical
+            expertise with a forward-thinking approach, let's connect!
+          </p>
+          <strong
+            >How I Can Help Your Company:
+            <br />
+            Here's a list of ways you can bring value to companies as a frontend
+            developer:
+          </strong>
+          <ul>
+            <li>
+              Building Responsive and Intuitive Interfaces: Creating visually
+              appealing and user-friendly applications that work seamlessly across
+              all devices and screen sizes.
+            </li>
+            <li>
+              Expertise in AngularJS & Beyond: Leveraging deep knowledge in
+              AngularJS to deliver powerful, scalable, and maintainable solutions,
+              while being open to incorporating new frameworks and technologies as
+              needed.
+            </li>
+            <li>
+              Enhancing User Experience (UX): Prioritizing usability to create
+              interfaces that meet user needs effectively, resulting in higher
+              engagement and satisfaction.
+            </li>
+            <li>
+              Optimizing Performance: Implementing best practices for efficient
+              code, reducing load times, and ensuring smooth functionality to
+              improve website performance and user retention.
+            </li>
+            <li>
+              Cross-Functional Collaboration: Working closely with designers,
+              backend developers, and product managers to align on goals and
+              ensure cohesive product development.
+            </li>
+            <li>
+              Writing Clean, Reusable Code: Adopting modular coding practices to
+              support future development and easy maintenance, reducing technical
+              debt.
+            </li>
+            <li>
+              Continuous Learning and Adaptability: Staying updated with industry
+              trends and adapting quickly to new tools, languages, or frameworks
+              to keep your products at the cutting edge.
+            </li>
+            <li>
+              Problem-Solving Mindset: Tackling complex challenges with a logical
+              approach to deliver effective solutions that meet both business and
+              user requirements.
+            </li>
+            <li>
+              Quality Assurance and Testing: Ensuring robust, error-free
+              applications by applying various testing methodologies, reducing
+              bugs, and enhancing reliability.
+            </li>
+            <li>
+              Innovation and Initiative: Bringing a proactive approach to
+              identifying improvements and suggesting new ideas that add value and
+              foster growth for your projects.
+            </li>
+          </ul>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <ul>
+            <li>HTML5, CSS3, SCSS</li>
+            <li>JavaScript, TypeScript</li>
+            <li>Angular</li>
+            <li>Git, GitHub</li>
+            <li>SQL, MySQL, FireBase</li>
+            <li>IntelliJ, JetBrains VS, VSC</li>
+  
+          </ul>
+        </ng-template>
+      </div>
+      <button>learn more</button>
+    </div>
+  </div>

@@ -25,7 +25,6 @@ export class AppService {
   public getSozialMedias():void {
     try {
       this.dataService.getSozialMedias().subscribe((data:ViewModelMedias[]) => {
-        console.warn(data);
         this._sozialMedias$.next(data);
       });
     } catch (error) {
@@ -42,7 +41,7 @@ export class AppService {
         window.open('https://www.linkedin.com/in/peter-lakatos-b99793216/', '_blank');
         break;
       case 2:
-        this.router.navigate(['cv']);
+        this.router.navigate(['/inwork']);
         break;
     }
   }
