@@ -1,4 +1,31 @@
 <div class="wrapper">
-    <div class="cont">
+  <div class="cont">
+    <div class="header">
+      <h2>My Career Journey</h2>
     </div>
+    <div class="career-wrapper">
+      <p class="intro-text">
+        I am a passionate Frontend Developer with over {{ years() }} years of
+        experience in crafting engaging and user-friendly web applications.
+        Since starting my journey in <strong> <u>Juni 2022</u> </strong>, I have
+        honed my skills in technologies such as Angular, TypeScript, and
+        JavaScript. I thrive in collaborative environments, and I'm dedicated to
+        delivering high-quality code that not only meets business needs but also
+        enhances user experiences.
+      </p>
+      <button class="home-button" routerLink="/home">Go to Home</button>
+      <div class="employer-cards">
+        <div *ngFor="let employer of employers; let i = index" class="employer-card">
+          <div class="employer-info">
+            <h2 (click)="showMoreInfo(employer)">{{ employer.name }}</h2>
+            <h3>{{ employer.role }}</h3>
+            <p class="employment-period">
+              {{ employer.startDate }} - {{ employer.endDate }}
+            </p>
+            <p class="description">{{ employer.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

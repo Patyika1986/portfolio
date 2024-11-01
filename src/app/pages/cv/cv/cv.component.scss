@@ -1,17 +1,138 @@
 .wrapper {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(235,235,235);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  .cont {
+    width: 80%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    margin-top: 2rem;
 
-    .cont {
-        width: 70%;
-        height: 100%;
-        background-color: white;
-        border-radius: 7px;
-        margin-top: 2rem;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+
+    @media (max-width: 1040px) {
+      width: 90%;
     }
+
+    @media (max-width: 956px) {
+        width: 100%;
+        box-shadow: none;
+        border-radius: none;
+      }
+
+    .header {
+      width: 80%;
+      margin: 1rem auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .career-wrapper {
+      padding: 20px;
+      text-align: center;
+      background-color: #f5f5f5;
+
+
+      .home-button {
+        margin-top: 20px; /* Abstand zum vorherigen Inhalt */
+        margin-bottom: 20px;
+        padding: 10px 20px; /* Innenabstand */
+        background-color: #3498db; /* Blaue Hintergrundfarbe */
+        color: white; /* Weiße Schriftfarbe */
+        border: none; /* Kein Rahmen */
+        border-radius: 5px; /* Abgerundete Ecken */
+        font-size: 1em; /* Schriftgröße */
+        cursor: pointer; /* Zeiger für den Mauszeiger */
+        transition: background-color 0.3s; /* Übergangseffekt für Hintergrundfarbe */
+    }
+    
+    .home-button:hover {
+        background-color: #2980b9; /* Dunklere Farbe beim Hover */
+    }
+    
+
+      .intro-text {
+        font-size: 1.1em;
+        color: #555;
+        margin-bottom: 40px;
+        line-height: 1.6;
+        max-width: 800px; /* Maximale Breite für bessere Lesbarkeit */
+        margin-left: auto; /* Zentriert den Text */
+        margin-right: auto; /* Zentriert den Text */
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 40px;
+      }
+
+      .employer-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .employer-card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 350px;
+        text-align: left;
+        transition: transform 0.3s ease;
+
+        @media (max-width: 1040px) {
+            width: 400px;
+          }
+
+          @media (max-width: 860px) {
+            width: 100%;
+          }
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        .employer-logo {
+          width: 100%;
+          height: 150px;
+          object-fit: contain;
+          background-color: #f0f0f0;
+        }
+
+        .employer-info {
+          padding: 20px;
+
+          h2 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 1.3em;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          h3 {
+            margin: 10px 0;
+            color: #3498db;
+            font-size: 1.1em;
+          }
+
+          .employment-period {
+            font-weight: bold;
+            color: #888;
+          }
+
+          .description {
+            margin-top: 10px;
+            color: #555;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
 }

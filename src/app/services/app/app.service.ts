@@ -41,7 +41,7 @@ export class AppService {
         window.open('https://www.linkedin.com/in/peter-lakatos-b99793216/', '_blank');
         break;
       case 2:
-        this.router.navigate(['/inwork']);
+        this.router.navigate(['/cv']);
         break;
     }
   }

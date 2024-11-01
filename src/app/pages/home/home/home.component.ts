@@ -33,7 +33,6 @@ export class HomeComponent {
 
   public openLink(index:number):void {
     this.appService.getToSozialMedia(index);
-    console.warn(index)
   }
 
   calculateExperience(): void {
