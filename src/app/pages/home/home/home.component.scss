@@ -50,10 +50,8 @@
         .img-box {
           position: relative;
           top: -4rem;
-          filter: grayscale(1);
           transition: scale 750ms ease-out, filter 250ms ease-in-out;
           &:hover {
-            filter: grayscale(0);
             scale: 1.05;
           }
           .image {
