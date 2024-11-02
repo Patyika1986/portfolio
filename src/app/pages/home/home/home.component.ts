@@ -1,4 +1,5 @@
 import { Component, signal } from '@angular/core';
+import { Router } from '@angular/router';
 import { ViewModelMedias } from 'src/app/models/viewmodel-medias';
 import { AppService } from 'src/app/services/app/app.service';
 
@@ -19,7 +20,7 @@ export class HomeComponent {
   public isAboutActive:boolean = true;
   public projects = signal(8);
 
-  constructor(private appService: AppService) {}
+  constructor(private appService: AppService, private router: Router) {}
 
   ngOnInit() {
     this.calculateExperience();
@@ -55,5 +56,9 @@ export class HomeComponent {
 
   public showAbout():void {
     this.isAboutActive = true;
+  }
+
+  public showProjects(): void {
+    this.router.navigate(['/inwork']);
   }
 }

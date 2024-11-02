@@ -37,6 +37,7 @@
       <div class="cont-body-header">
         <div class="about list-item" (click)="showAbout()">About</div>
         <div class="skills list-item" (click)="showSkills()">Skills</div>
+        <div class="skills list-item" (click)="showProjects()">Projects</div>
       </div>
       <div class="cont-body">
         <ng-container *ngIf="isAboutActive; else elseTemplate">
@@ -128,6 +129,6 @@
           </ul>
         </ng-template>
       </div>
-      <button>learn more</button>
+      <button routerLink="/contact">Contact</button>
     </div>
   </div>
