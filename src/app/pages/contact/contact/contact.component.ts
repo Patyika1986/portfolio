@@ -27,10 +27,10 @@ export class ContactComponent {
       const { name, email, message } = this.contactForm.value;
       const templateParams = {
         from_name: name,
-        from_email: email,
+        email_id: email,
         message: message
       };
-
+      
       emailjs
         .send(
           environment.serviceId,
