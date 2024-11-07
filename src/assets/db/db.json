@@ -1,16 +1,96 @@
 {
-    "sozialMedias": [
+  "sozialMedias": [
+    {
+      "title": "GitHub",
+      "url": "assets/icons/github.ico"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "assets/icons/linkedin.png"
+    },
+    {
+      "title": "CV",
+      "url": "assets/icons/cv.png"
+    }
+  ],
+  "reference": [
+    {
+      "id": 1,
+      "name": "Mr. Peter Lakatos",
+      "birthDate": "August 6, 1986",
+      "employmentPeriods": [
         {
-            "title": "GitHub",
-            "url": "assets/icons/github.ico"
-          },
-          {
-            "title": "LinkedIn",
-            "url": "assets/icons/linkedin.png"
-          },
-          {
-            "title": "CV",
-            "url": "assets/icons/cv.png"
-          }
-    ]
+          "role": "Cleaner",
+          "startDate": "October 4, 2016",
+          "endDate": "July 31, 2017"
+        },
+        {
+          "role": "Property Manager",
+          "startDate": "August 1, 2017",
+          "endDate": "March 31, 2020"
+        }
+      ],
+      "responsibilities": "During his time as a cleaner, Mr. Lakatos was responsible for daily under-floor cleaning and consistently completed the tasks assigned to him to our complete satisfaction.",
+      "conduct": "His behavior towards customers, superiors, and employees was always impeccable.",
+      "closure": "Unfortunately, we had to part ways with Mr. Lakatos on March 31, 2020. We regret this decision, thank him for the good cooperation, and wish him all the best for the future.",
+      "companyName": "Tecvia GmbH"
+    },
+    {
+      "id": 2,
+      "name": "Mr. Peter Lakatos",
+      "birthDate": "August 6, 1986",
+      "employmentPeriods": [
+        {
+          "role": "Software Developer",
+          "startDate": "January 1, 2023",
+          "endDate": "May 5, 2023"
+        }
+      ],
+      "responsibilities": "Mr. Lakatos' responsibilities included frontend development, development of graphical user interfaces, software testing of created applications, implementation and development of screen designs, continuous improvement of usability, maintenance, care, and expansion of existing applications, and the creation of components using Angular.",
+      "conduct": "Mr. Lakatos always showed exceptional initiative, diligence, and resilience. His behavior towards superiors, colleagues, and customers was impeccable, and he was a valued member of our team.",
+      "performance": "Mr. Lakatos completed all his tasks with great care and diligence, always identifying with his tasks and demonstrating a high level of commitment. He effectively applied his knowledge, consistently fulfilling his duties to our full satisfaction.",
+      "closure": "Mr. Lakatos left our company on May 5, 2023. We thank him for the excellent cooperation and wish him continued success in his professional and personal life.",
+      "companyName": "SET Engineering GmbH",
+      "companyDescription": "SET Engineering GmbH, based in Nuremberg, is an IT service provider specializing in software development, network technology, virtualization, and IT training. Key products include the logistics accounting system 'set Transport' and the warning management system 'setVision'."
+    },
+    {
+      "id": 3,
+      "name": "Mr. Peter Lakatos",
+      "birthDate": "August 6, 1986",
+      "employmentPeriods": [
+        {
+          "role": "Front-end Developer",
+          "startDate": "June 1, 2022",
+          "endDate": "December 31, 2022"
+        }
+      ],
+      "responsibilities": "Mr. Lakatos was responsible for the development of graphical user interfaces, creation and automation of unit, component, system, and interface tests, implementation of multi-device templates in responsive design, development of screen designs from initial specifications to final testing and rollout, implementation of accessible websites, expansion of the automated release process (continuous integration), maintenance and extension of existing applications, consulting and support in concept creation, incident handling, development of REST web services including JSON, web security, BPMN, and UML.",
+      "conduct": "Mr. Lakatos demonstrated a high level of resilience, commitment, and initiative. His behavior towards superiors, colleagues, and employees was always impeccable, contributing to an efficient team environment.",
+      "closure": "Mr. Lakatos is leaving our company at his own request on December 31, 2022. We regret this decision, thank him for his contributions, and wish him all the best for his professional and personal future.",
+      "companyName": "OrgaCard Siemantel & Alt GmbH",
+      "companyDescription": "OrgaCard Siemantel & Alt GmbH is a leading system provider for innovative software solutions. Our versatile modules primarily support logistical requirements in inpatient healthcare, such as kitchen logistics, workflow management, and controlling. Our customers include hospitals, rehabilitation clinics, and senior citizens' homes in Germany and internationally.",
+      "performance": "Mr. Lakatos possesses comprehensive, up-to-date, and diverse specialist knowledge, even beyond his immediate field, which he applied effectively and purposefully. He demonstrated high levels of initiative, met goals successfully, and his work quality was consistently high, characterized by careful planning and systematic approach."
+    },
+    {
+      "id": 4,
+      "name": "Mr. Peter Lakatos",
+      "birthDate": "August 6, 1986",
+      "employmentPeriods": [
+        {
+          "role": "Cleaner",
+          "startDate": "October 4, 2016",
+          "endDate": "July 31, 2017"
+        },
+        {
+          "role": "Property Manager",
+          "startDate": "August 1, 2017",
+          "endDate": "March 31, 2020"
+        }
+      ],
+      "responsibilities": "During his time as a cleaner, Mr. Lakatos was responsible for daily under-floor cleaning and consistently completed the tasks assigned to him to our complete satisfaction.",
+      "conduct": "His behavior towards customers, superiors, and employees was always impeccable.",
+      "closure": "Unfortunately, we had to part ways with Mr. Lakatos on March 31, 2020. We regret this decision, thank him for the good cooperation, and wish him all the best for the future.",
+      "companyName": "Facility Management"
+    }
+  ]
 }

@@ -19,7 +19,6 @@ export class ContactComponent {
       email: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required, Validators.minLength(10)]],
     });
-    console.log(environment.production);
   }
 
   onSubmit(): void {

@@ -3,12 +3,21 @@ import { RouterModule, Routes } from '@angular/router';
 import { CvComponent } from './pages/cv/cv/cv.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home/home.component';
+import { EmployerComponent } from './pages/employer/employer/employer.component';
 
 const routes: Routes = [
   {
     path: '',
     redirectTo: 'home', // Redirect empty path to home
     pathMatch: 'full' // Ensure the whole URL is matched
+  },
+  {
+    path: 'reference',
+    component: EmployerComponent
+  },
+  {
+    path: 'reference/:id',
+    component: EmployerComponent
   },
   {
     path: 'contact',

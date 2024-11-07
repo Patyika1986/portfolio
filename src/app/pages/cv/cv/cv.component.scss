@@ -82,6 +82,9 @@
         width: 350px;
         text-align: left;
         transition: transform 0.3s ease;
+        position: relative;
+        padding-bottom: 2rem;
+
 
         @media (max-width: 1040px) {
             width: 400px;
@@ -105,6 +108,19 @@
         .employer-info {
           padding: 20px;
 
+
+          .more-button {
+            position: absolute;
+            bottom: 20px;
+            padding: 10px 20px; /* Innenabstand */
+            background-color: #3498db; /* Blaue Hintergrundfarbe */
+            color: white; /* Weiße Schriftfarbe */
+            border: none; /* Kein Rahmen */
+            border-radius: 5px; /* Abgerundete Ecken */
+            font-size: 1em; /* Schriftgröße */
+            cursor: pointer; /* Zeiger für den Mauszeiger */
+            transition: background-color 0.3s; /* Übergangseffekt für Hintergrundfarbe */
+          }
           h2 {
             margin: 0;
             color: #2c3e50;

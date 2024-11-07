@@ -1,0 +1,48 @@
+<div class="wrapper">
+  <div class="cont">
+    <!-- Anzeige für ID 1 -->
+    <div *ngIf="selectedId === 1 || selectedId === '1'">
+      <p>This section is currently unavailable. It will be available soon.</p>
+      <button (click)="goBackToCV()">Back to CV</button>
+    </div>
+
+    <!-- Standard Referenz-Anzeige für andere IDs -->
+    <div class="reference-container" *ngIf="reference && selectedId !== '1'">
+      <header>
+        <h2>Employment Reference</h2>
+        <p><strong>For:</strong> {{ reference.name }}</p>
+        <p><strong>Born on:</strong> {{ reference.birthDate }}</p>
+      </header>
+
+      <section class="employment-details">
+        <p *ngFor="let period of reference.employmentPeriods">
+          {{ reference.name }} was employed in our company as a
+          {{ period.role }} from <strong>{{ period.startDate }}</strong> to
+          <strong>{{ period.endDate }}</strong
+          >.
+        </p>
+      </section>
+
+      <section class="responsibilities">
+        <p>{{ reference.responsibilities }}</p>
+      </section>
+
+      <section class="conduct">
+        <p>{{ reference.conduct }}</p>
+      </section>
+
+      <section class="closure">
+        <p>{{ reference.closure }}</p>
+      </section>
+
+      <footer>
+        <p>Sincerely,</p>
+        <p>
+          <strong>{{ reference.companyName }}</strong>
+        </p>
+      </footer>
+      <!-- Back to CV Button -->
+      <button class="back-button" (click)="goBackToCV()">Back to CV</button>
+    </div>
+  </div>
+</div>

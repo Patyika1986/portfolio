@@ -1,31 +1,49 @@
 <app-notification></app-notification>
 <div class="contact-container">
-    <h2>Contact Information</h2>
-    <div class="contact-info">
-      <p><strong>Address:</strong> Schottengasse 2, Nürnberg, 90402</p>
-      
-      <div class="contact-item">
-        <i class="fa fa-phone"></i>
-        <a href="tel:017642794462"><strong>Phone:</strong> (0176) 42794462</a>
-      </div>
-      
-      <div class="contact-item">
-        <i class="fa fa-envelope"></i>
-        <a href="mailto:peter.lakatos@outlook.de"><strong>Email:</strong> peter.lakatos@outlook.de</a>
-      </div>
+  <h2>Contact Information</h2>
+  <div class="contact-info">
+    <p><strong>Address:</strong> Schottengasse 2, Nürnberg, 90402</p>
+
+    <div class="contact-item">
+      <i class="fa fa-phone"></i>
+      <a href="tel:017642794462"><strong>Phone:</strong> (0176) 42794462</a>
     </div>
-  
-    <h2>Contact Me</h2>
-    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-      <label for="name">Name</label>
-      <input id="name" formControlName="name" type="text" placeholder="Your Name" />
-  
-      <label for="email">Email</label>
-      <input id="email" formControlName="email" type="email" placeholder="Your Email" />
-  
-      <label for="message">Message</label>
-      <textarea id="message" formControlName="message" rows="4" placeholder="Your Message"></textarea>
-  
-      <button type="submit" [disabled]="!contactForm.valid">Send Message</button>
-    </form>
+
+    <div class="contact-item">
+      <i class="fa fa-envelope"></i>
+      <a href="mailto:peter.lakatos@outlook.de"
+        ><strong>Email:</strong> peter.lakatos&#64;outlook.de</a
+      >
+    </div>
   </div>
+
+  <h2>Contact Me</h2>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name</label>
+    <input
+      id="name"
+      formControlName="name"
+      type="text"
+      placeholder="Your Name"
+    />
+
+    <label for="email">Email</label>
+    <input
+      id="email"
+      formControlName="email"
+      type="email"
+      placeholder="Your Email"
+    />
+
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      formControlName="message"
+      rows="4"
+      placeholder="Your Message"
+    ></textarea>
+    <button routerLink="/home">Back to home</button>
+
+    <button type="submit" [disabled]="!contactForm.valid">Send Message</button>
+  </form>
+</div>

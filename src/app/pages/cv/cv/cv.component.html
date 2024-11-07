@@ -15,14 +15,23 @@
       </p>
       <button class="home-button" routerLink="/home">Go to Home</button>
       <div class="employer-cards">
-        <div *ngFor="let employer of employers; let i = index" class="employer-card">
+        <div
+          *ngFor="let employer of employers; let i = index"
+          class="employer-card"
+        >
           <div class="employer-info">
-            <h2 (click)="showMoreInfo(employer)">{{ employer.name }}</h2>
+            <h2>{{ employer.name }}</h2>
             <h3>{{ employer.role }}</h3>
             <p class="employment-period">
               {{ employer.startDate }} - {{ employer.endDate }}
             </p>
             <p class="description">{{ employer.description }}</p>
+            <button
+              class="more-button"
+              [routerLink]="'/reference/' + employer.id"
+            >
+              Reference
+            </button>
           </div>
         </div>
       </div>
