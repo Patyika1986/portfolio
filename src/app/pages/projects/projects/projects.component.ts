@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
-      title: 'Projekt 1: E-Commerce-Shop',
-      description: 'Ein Online-Shop, der mit Angular und Firebase entwickelt wurde. Es ermöglicht Benutzern, Produkte zu durchsuchen, zu kaufen und Bestellungen zu verwalten.',
-      usage: 'Die Benutzer können Produkte hinzufügen und in den Warenkorb legen. Es gibt eine einfache Bestell- und Zahlungsfunktion wie zum Beispiel PayPal, CreditCard oder per Lastschrift.',
-      technologies: 'Technologien: Angular, RXjS, Firebase, NGX-Paypal',
+      title: 'Project 1: E-Commerce Shop',
+      description: 'An online store developed with Angular and Firebase. It allows users to browse products, make purchases, and manage orders.',
+      usage: 'Users can add products to the cart and proceed with checkout. It includes simple order and payment features, such as PayPal, Credit Card, or direct debit payments.',
+      technologies: 'Technologies: Angular, RXJS, Firebase, NGX-Paypal',
       link: 'https://step-one-theta.vercel.app/startseite',
       imageUrl: 'assets/images/e-commerze.PNG'
     }
