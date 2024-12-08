@@ -7,6 +7,10 @@ import { EmployerComponent } from './pages/employer/employer/employer.component'
 
 const routes: Routes = [
   {
+    path: 'projects',
+    loadChildren: () => import('./pages/projects/projects.module').then(m => m.ProjectsModule)
+  },
+  {
     path: '',
     redirectTo: 'home', // Redirect empty path to home
     pathMatch: 'full' // Ensure the whole URL is matched

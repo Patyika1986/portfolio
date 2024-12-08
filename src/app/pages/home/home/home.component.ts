@@ -59,6 +59,6 @@ export class HomeComponent {
   }
 
   public showProjects(): void {
-    this.router.navigate(['/inwork']);
+    this.router.navigate(['/projects']);
   }
 }

@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <div class="page-container">
+        <header class="page-header">
+          <h1 class="page-title">Meine Projekte</h1>
+          <p class="page-description">Hier findest du eine Auswahl meiner bisherigen Projekte, die ich mit verschiedenen Technologien entwickelt habe. Bald folgen neue Projekte ✅</p>
+          <a routerLink="/" class="home-link">Zurück zur Startseite</a> <!-- Verlinkt zur Home-Seite -->
+        </header>
+        
+        <div class="projects-container">
+          <div class="project-card" *ngFor="let project of projects">
+            <img [src]="project.imageUrl" alt="{{ project.title }}" class="project-image" />
+            <div class="project-info">
+              <h3 class="project-title">{{ project.title }}</h3>
+              <p class="project-description">{{ project.description }}</p>
+              <p class="project-usage"><strong>Wie man es benutzt:</strong> {{ project.usage }}</p>
+              <p class="project-technologies"><strong>Verwendete Technologien:</strong> {{ project.technologies }}</p>
+              <a [href]="project.link" target="_blank" class="project-link">Mehr erfahren</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+  

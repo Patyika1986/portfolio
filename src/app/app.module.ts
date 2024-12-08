@@ -10,7 +10,7 @@ import { EmployerComponent } from './pages/employer/employer/employer.component'
 @NgModule({
   declarations: [
     AppComponent,
-    EmployerComponent
+    EmployerComponent,
   ],
   imports: [
     BrowserModule,
